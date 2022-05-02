@@ -1,0 +1,27 @@
+@import 'global.scss';
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    .logo {
+        max-width: 10rem;
+    }
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        .link a{
+            margin-left: 2em;
+            color: $gray-color;
+            font-size: 1.4em;
+            transition: all 0.15s ease;
+            &:hover {
+                color:$yellow-color;
+                border-bottom: 1px solid $yellow-color;
+            }
+        }
+        
+    }
+
+}
