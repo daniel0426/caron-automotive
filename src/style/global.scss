@@ -5,7 +5,8 @@ $background-color : #3C3C42;
 $gray-color : #ebecf0;
 $darkgray-color : #646161;
 $blue-color: #2F86C5;
-
+$font-montserrat : 'Montserrat';
+$font-sans-pro: 'Source Sans Pro';
 * {
     padding: 0;
     margin: 0;
@@ -16,5 +17,6 @@ $blue-color: #2F86C5;
 
 body {
     background-color: $background-color;
+    font-family: $font-sans-pro;
 }
 
