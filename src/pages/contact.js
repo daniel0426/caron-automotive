@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact_Form from '../components/Contatc_Form';
+import Contact_Form from '../components/Contact_Form';
 import Layout from '../components/layout'
 import "../style/contact.scss"
 

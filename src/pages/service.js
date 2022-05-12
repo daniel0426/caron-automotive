@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import "../style/service.scss"
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
 import {AiOutlineCheckCircle} from 'react-icons/ai';
 
 const service = () => {

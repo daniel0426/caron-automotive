@@ -1,0 +1,52 @@
+@import 'global.scss';
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em 10%;
+}
+
+.company_info {
+    padding: 0 10%;
+    
+    div {
+        margin-bottom: 2em;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-bottom: 1em;
+    }
+    svg {
+        font-size:1.4em;
+        margin-right: 0.5em;
+        font-weight: lighter;
+    }
+    p {
+        color: $yellow-color;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .platforms {
+        a {
+            color: white;
+            margin-right: 1em;
+            padding: 0.5em;
+            svg {
+                font-size: 1.5em;
+                transition: all 0.2s ease;
+                :hover {
+                    transform: scale(1.1);
+                }
+            }            
+        }
+    }
+    .copyright {
+        color: $gray-color;
+        opacity: 0.8;
+    }
+    
+}
