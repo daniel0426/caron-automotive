@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "yarn build && dotenv -e .env -- yarn gatsby-plugin-s3 deploy -y"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -20,6 +21,7 @@
     "gatsby": "^4.13.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.13.0",
+    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sass": "^5.13.0",
     "gatsby-plugin-sharp": "^4.13.0",
     "gatsby-source-filesystem": "^4.13.0",
