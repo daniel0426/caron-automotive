@@ -1,7 +1,7 @@
 @import 'global.scss';
 
 .main_container {
-    padding: 3em 10%;
+    padding: 3em 15%;
     text-align: center;
     h1 {
         font-size: 4em;
@@ -12,7 +12,7 @@
         color: $gray-color;
         font-size: 1.5em;
         word-spacing: 3px;
-        margin: 2em 0 10% 0;
+        margin: 1em 0 10% 0;
     }
     .slider_wrapper {
         width: 90%;
@@ -64,6 +64,7 @@
                     border: 3px solid $blue-color;
                     margin: 0 5px;
                     background: #f1f1f1;
+                    cursor: pointer;
                   }
                 .dot.active {
                     background: $blue-color;
@@ -86,18 +87,17 @@
     h1 {
         font-size: 2em;
         color: $yellow-color;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
     .about-summary_container {
         
-
         .about-summary {
             display: flex;
             align-items: center;
             justify-content: space-around;
             margin-bottom: 3em;
             .about-summary_img {
-                width: 50%;
+                flex:1 ;
                 text-align: center;
                 // padding: 4em;
                img {
@@ -107,7 +107,7 @@
             .about-summary_desc {
                 color: $gray-color;
                 padding: 4em;
-
+                flex:1 ;
                h2 {
                 //    width: 80%;
                    text-align: center;
@@ -164,26 +164,213 @@
     }
 }
 .certificates_container {
-    margin-top: 10%;
-    h2 {
-        margin-top: 3em;
-        text-align: center;
-        color: $gray-color;
-    }
+
+    width: 70%;
+    margin: 10% auto 2em auto;
+    padding: 2em;
     .certificates {
         display: flex;
         justify-content: center;
-        div {
-            width:20%;
-            margin: 2em;
-            height: auto;
-          
-            img {
-                width: 100%;
-    
+            div{
+                height: auto;
+                width: 40%;
+                img {
+                    // width: 30%;
+                    max-width: 15em;
+                    object-fit: contain;
+                    min-width: 7em;
+                    margin: 0 auto;
+                }
+                
             }
+            
+            
+        
+            
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .main_container {
+        h1  {
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        .slider_wrapper {
+            .slide {
+                .slide_title  {
+                    h1 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+          
+        }
+       
+    }
+
+    .main-about_container{
+        h1 {
+            margin-bottom: 1em;
+        }
+        .about-summary_container{
+            .about-summary {
+                margin-bottom: 1em;
+                .about-summary_desc {
+                    padding: 3em;
+                    h2 {
+                           font-size: 1.5em;
+                        margin-bottom: 1em;
+
+                       }
+                       p{
+                           font-size: 1.1em;
+                       }
+                }
+            }
+        }
+    }
+    .main-contact_container {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .main-about_container{
+        padding-top: 0em;
+
+        h1 {
+            margin-bottom: 1em;
+        }
+        .about-summary_container{
+            .about-summary {
+                margin-bottom: 2em;
+                .about-summary_desc {
+                    padding: 2em;
+                    h2 {
+                           font-size: 1.2em;
+                        margin-bottom: 1em;
+
+                       }
+                       p{
+                           font-size: 0.9em;
+                       }
+                }
+            }
+        }
+   
+    }
+}
+
+@media (max-width: 800px) {
+    .main_container {
+        h1  {
+            font-size: 2em;
+        }
+        p{
+            font-size: 1em;
+        }
+        .slider_wrapper {
+            .slide {
+               flex-direction: column;
+               .slide_title  {
+                h1 {
+                    margin-bottom: 1em;
+                }
+            }
+            }
+          
+        }
+     
+    }
+}
+
+@media (max-width: 750px){
+    .main-about_container{
+       
+        .about-summary_container{
+            .about-summary {
+               flex-direction: column;
+                .about-summary_desc {
+                    padding: 2em;
+                    h2 {
+                           font-size: 1.3em;
+                        margin-bottom: 1em;
+
+                       }
+                       p{
+                           font-size: 1em;
+                       }
+                }
+                &:nth-child(2n){
+                    flex-direction: column;
+                }
+            }
+
+        }
+   
+    }
+
+    .main-contact_container {
+        h1  {
+            margin-bottom: 1.5em;
+            font-size: 2em;
+        }
+        p{
+            font-size: 1.2em;
         }
     }
 }
 
 
+
+@media (max-width: 550px) {
+   
+    .main_container {
+        padding: 20% 5%;
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .slider_wrapper {
+            .slide {
+               flex-direction: column;
+               .slide_title  {
+                    h1 {
+                        font-size: 1.2em;
+                    }
+            }
+            }
+          
+        }
+     
+    }
+
+    .main-contact_container {
+        h1  {
+            margin-bottom: 1.2em;
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+        a {
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            font-size: 1em;
+          
+        }
+    }
+
+    .certificates_container {
+        width: 90%;
+        margin: 10% auto 2em auto;
+        padding: 1em;
+    }
+}

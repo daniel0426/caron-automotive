@@ -4,6 +4,10 @@ import {MdLocationPin} from 'react-icons/md';
 import {FaFacebookF} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {FaGoogle} from 'react-icons/fa';
+import {BiPhoneCall} from 'react-icons/bi';
+import {HiOutlineMail} from 'react-icons/hi';
+
+
 import GoogleMap from './GoogleMap';
 import "../style/footer.scss";
 
@@ -27,6 +31,26 @@ const Footer = () => {
                     <h2>Location</h2>
                 </div>
                 <p> 7 Christopher Street, Tauranga (behind Korean mart)</p>
+            </div>
+            <div className='contact'>
+                 <div>
+                    <div className='location_title title'>
+                        <BiPhoneCall />
+                        <h2>Phone</h2>
+                    </div>
+                    <a href="tel:075712577">
+                        07 571 2577  
+                    </a>                            
+                </div>
+                <div>
+                    <div className='location_title title'>
+                        <HiOutlineMail />
+                        <h2>Email</h2>
+                    </div>
+                    <a href="mailto:carontga@gmail.com">
+                        carontga@gmail.com
+                    </a>                            
+                </div>                              
             </div>
             <div className="platforms">
                 <a href="https://www.facebook.com/CARON-Automotive-107172715282855" target="_blank">

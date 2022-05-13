@@ -93,11 +93,10 @@ const MainPage = () => {
         <Link to="/contact">CONTACT US</Link>
       </section>
       <section className="certificates_container">
-            <h2>Certified By</h2>
-           <div className="certificates">
-         <StaticImage src="../images/main/certificate1.png" alt="main-about img" />
-        <StaticImage src='../images/main/certificate2.png' alt="certificate img" />
-        </div> 
+            <div className="certificates">
+              <StaticImage src="../images/main/certificate1.png" alt="main-about img" objectFit='contain'/>
+              <StaticImage src='../images/main/certificate2.png' alt="certificate img" objectFit='contain'/>
+           </div> 
       </section>
     </Layout>
   )

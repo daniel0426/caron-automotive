@@ -1,0 +1,51 @@
+@import 'global.scss';
+
+
+.wrapper {
+    width: 1.6rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.25s transform ease-out;
+}
+
+.line_menu {
+    background-color: $yellow-color;
+    border-radius: 3px;
+    width: 100%;
+    height: 3px;
+}
+
+.line_menu.half {
+    width: 50%;
+}
+
+.line_menu.start {
+    transition: transform 0.25s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin : right;
+}
+
+.line_menu.end {
+    align-self: flex-end;
+    transition: transform 0.25s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+.wrapper.isActive {
+    transform: rotate(-45deg);
+}
+.isActive .line_menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+.isActive .line_menu.end {
+    transform : rotate(-90deg) translateX(-3px);
+}
+
+
+@media screen and (min-width: 650px){
+    .wrapper{
+        display: none;
+    }
+}

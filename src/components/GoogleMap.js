@@ -11,7 +11,7 @@ const GoogleMap = () => {
 
   return (
     <div className='map'>
-            <div className='google-map' style={{ height: '100%', width: '100%' }}>
+            <div className='google_map' style={{ height: '100%', width: '100%' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{key: process.env.GATSBY_GOOGLE_MAP_API_KEY}}
                 defaultCenter={location}
