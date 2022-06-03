@@ -26,6 +26,7 @@ module.exports = {
       resolve: `gatsby-plugin-s3`,
       options: {
         bucketName: "caron.co.nz",
+        region: "ap-southeast-2"
       },
     },
   ]
