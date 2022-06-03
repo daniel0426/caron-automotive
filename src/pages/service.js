@@ -94,13 +94,13 @@ const service = () => {
                 <StaticImage className="service_img" src='../images/service/oilChange.png' alt="service img" />
                 <h2>OIL CHANGE</h2>
                 <ul className="service_details">
-                  <li>Vertex 10W 30 Fully Synthetic</li>
-                  <li>Vertex 5W 30 Semi Synthetic</li>
+                  <li>Vertex 10W 30 Semi Synthetic</li>
+                  <li>Vertex 5W 30 Fully Synthetic</li>
                   <li>Ryco / Fram / Superior Oil filter</li>
                 </ul>
             </li>
             <li className="service_item">
-                <StaticImage className="service_img" src='../images/service/engine.png' alt="service img" />
+                <StaticImage className="service_img" src='../images/service/engineRepair.png' alt="service img" />
                 <h2>ENGINE REPAIR</h2>
                 <ul className="service_details">
                   <li>Engine Rocker cover gasket, Headgasket change</li>
@@ -110,11 +110,11 @@ const service = () => {
                 </ul>
             </li>
             <li className="service_item">
-                <StaticImage className="service_img" src='../images/service/brake.png' alt="service img" />
+                <StaticImage className="service_img" src='../images/service/breakSystem.png' alt="service img" />
                 <h2>BREAK SYSTEM</h2>
                 <ul className="service_details">
                   <li>Brake fluid replacement</li>
-                  <li>Brake rotors / pads changec</li>
+                  <li>Brake rotors / Pads change</li>
                   <li>Brake imbalance repair</li>
                   <li>Using SAFETSTOP brake tester machine</li>
                 </ul>
@@ -138,7 +138,7 @@ const service = () => {
                   <li>Think tool diagnostic scan tool </li>
                   <li>ECU programming</li>
                   <li>Error code clearing</li>
-                  <li>Service test</li>
+                  <li>Service reset</li>
                 </ul>
             </li>
             <li className="service_item">
@@ -156,7 +156,7 @@ const service = () => {
                 <h2>TYRE</h2>
                 <ul className="service_details">
                   <li>Tyre fitting, balancing</li>
-                  <li>Treat Hankook, Laufenn, Triangle, Go pro, Dayton, Bridgestone(supercat) tyres</li>
+                  <li>Treat Hankook, Laufenn, Triangle, Go pro, Dayton, Bridgestone, Supercat tyres</li>
                 </ul>
             </li>
             <li className="service_item">

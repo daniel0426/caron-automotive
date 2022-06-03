@@ -1,6 +1,7 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react';
 import "../style/map.scss";
+import {HiOutlineLocationMarker} from 'react-icons/hi';
 
 
 const GoogleMap = () => {
@@ -15,12 +16,18 @@ const GoogleMap = () => {
             <GoogleMapReact
                 bootstrapURLKeys={{key: process.env.GATSBY_GOOGLE_MAP_API_KEY}}
                 defaultCenter={location}
-                defaultZoom={21}
+                yesIWantToUseGoogleMapApiInternals
+                defaultZoom={20}
             >
+            <HiOutlineLocationMarker 
+              lat={location.lat}
+              lng={location.lng}
+              text="Caron Automotive"
+            />
             </GoogleMapReact>
             </div>
     </div>
-    )
-  }
+  )
+}
 
 export default GoogleMap

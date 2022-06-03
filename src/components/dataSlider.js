@@ -5,7 +5,7 @@ const sliderData = [
     },
     {
         id: 2,
-        title: "QUALITY CAR MAINTENANCE"
+        title: "QUALITY MAINTENANCE"
     },
     {
         id: 3,

@@ -23,17 +23,17 @@ const MainPage = () => {
       setSlideIndex(index);
     }
   return (
-    <Layout className="main">
+    <Layout >
       <main className="main_container">
         <h1>CARON AUTOMOTIVE</h1>
-        <p>We offer quality repais with years of experience</p>
+        <p>We offer quality repairs with years of experience</p>
         <div className='slider_wrapper'>
             {sliderData.map((obj, index) => {
               return (
                 <div key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                     <div className='img'>
-                       <img  src={`../mainslider/slider${index +1}.jpg`} alt="slide-img" />
+                       <img  src={`../mainslider/slider${index +1}.webp`} alt="slide-img" />
                     </div>
                     <div className="slide_title">
                       <h1>{obj.title}</h1>
@@ -60,8 +60,8 @@ const MainPage = () => {
             </div>
             <div className="about-summary_desc">
               <h2>Experienced Mechanics</h2>
-              <p>The mechanics at our shop have years of experience.<br/>
-                 They are dedicated to providing high-quality repairs to keep you safe and happy </p>
+              <p>The mechanics at our shop have years of experience.
+                 They are dedicated to providing high-quality repairs to keep you safe and happy. </p>
             </div>
           </li>
           <li className="about-summary">
@@ -70,7 +70,7 @@ const MainPage = () => {
             </div>
             <div className="about-summary_desc">
               <h2>We Have You Satisfied</h2>
-              <p>Whether you’re coming in for a routine inspection or a repair service, <br/> we promise that you will be completely satified with our work. </p>
+              <p>Whether you’re coming in for a routine inspection or a repair service, we promise that you will be completely satified with our work. </p>
             </div>
           </li>
           <li className="about-summary">
@@ -79,7 +79,7 @@ const MainPage = () => {
             </div>
             <div className="about-summary_desc">
               <h2>Our Quality Promise</h2>
-              <p> We’re committed to providing a stress-free experience to both new and returning customers.<br/> Our shop only uses parts from reputable brands to ensure that your vehicle is always ready to drive.</p>
+              <p> We’re committed to providing a stress-free experience to both new and returning customers. Our shop only uses parts from reputable brands to ensure that your vehicle is always ready to drive.</p>
             </div>
           </li>
         </ul>

@@ -9,7 +9,7 @@ const About = () => {
       <main className="about_container">
         <h1>ABOUT US</h1>
         <div>
-          <StaticImage className="profile_img" src="../images/about/profile.jpg" alt="profile img" />
+            <StaticImage className="profile_img" src="../images/about/profile.jpg" alt="profile img" />
           <div className="about_desc">
             <p>
             As the only Korean repair shop in Tauranga, 

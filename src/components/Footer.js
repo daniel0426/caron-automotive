@@ -53,19 +53,21 @@ const Footer = () => {
                 </div>                              
             </div>
             <div className="platforms">
-                <a href="https://www.facebook.com/CARON-Automotive-107172715282855" target="_blank">
+                <a href="https://www.facebook.com/CARON-Automotive-107172715282855" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF/>
                 </a>
-                <a href="https://www.google.com/search?q=caron+automotive" target="_blank">
+                <a href="https://www.instagram.com/caron_automotive/?hl=en" target="_blank" rel="noopener noreferrer">
                     <FaInstagram/>
                 </a>
-                <a href="https://www.instagram.com/caron_automotive/?hl=en" target="_blank">
+                
+                <a href="https://www.google.com/search?q=caron+automotive" target="_blank" rel="noopener noreferrer">
                     <FaGoogle/>
                 </a>
+                <p className="copyright">
+                 Copyright © 2022 caron-automotive. All rights reserved
+                </p>
             </div>
-            <p className="copyright">
-            Copyright © 2022 caron-automotive. All rights reserved
-            </p>
+           
         </div>
         <GoogleMap />
     </footer>

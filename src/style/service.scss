@@ -4,7 +4,7 @@
     width: 80%;
     margin: 3em auto;
     h1 {
-        font-size: 3em;
+        font-size: 4em;
         color: $yellow-color;
     }
     .check_container {
@@ -18,7 +18,7 @@
            color: $yellow-color;
            text-align: center;
            margin-bottom: 1em;
-           
+           font-size: 2em;
        }
        .service_item {
            display: flex;
@@ -26,7 +26,10 @@
            color: $gray-color;
            margin :0.5em 1em;
            svg {
-               margin-right: 1em;
+               margin-right: 0.5em;
+           }
+           p {
+               font-size: 1.2em;
            }
            
        }
@@ -72,15 +75,18 @@
 
             .service_img {
                 max-width: 5em;
+                
             }
             h2 {
                 color: $yellow-color;
                 margin: 1em 0;
+                font-size: 1.7em;
             }
             .service_details {
                 li{
                     color: $gray-color;
                     margin-bottom: 1em;
+                    font-size: 1.2em;
                 }
             }
         }

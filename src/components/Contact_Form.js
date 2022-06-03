@@ -14,7 +14,7 @@ const Contact_Form = () => {
       .then((result)=> {
         if(result.text==='OK'){
           setSubmitSuccess(true);
-          setTimeout(()=> setSubmitSuccess(false), 2500);
+          setTimeout(()=> setSubmitSuccess(false), 3000);
           form.current.reset()
         }
         
