@@ -17,12 +17,11 @@ const GoogleMap = () => {
                 bootstrapURLKeys={{key: process.env.GATSBY_GOOGLE_MAP_API_KEY}}
                 defaultCenter={location}
                 yesIWantToUseGoogleMapApiInternals
-                defaultZoom={20}
+                defaultZoom={21}
             >
             <HiOutlineLocationMarker 
               lat={location.lat}
               lng={location.lng}
-              text="Caron Automotive"
             />
             </GoogleMapReact>
             </div>
