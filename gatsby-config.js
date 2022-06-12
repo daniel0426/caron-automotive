@@ -4,8 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `caron-automotive`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Caron Automotive`,
+    description: "Tauranga's best automotive",
+    keywords : "automotive, car repair, tauranga, garage, ",
+    siteUrl: `http://caron.co.nz`,
+    image: `src/images/nav/logo.png`
   },
   plugins: [
     "gatsby-plugin-sass",

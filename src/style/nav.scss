@@ -9,7 +9,6 @@
     .logo {
         width: 10%;
         min-width: 8em;
-        padding: 1em ;
     }
 
     .links {
@@ -36,6 +35,8 @@
 @media screen and (max-width: 650px) {
     .nav {
         height: 7em;
+        padding: 2em 5% 2em 0;
+
         .links {
             display: flex;
             flex-direction: column;
@@ -49,7 +50,7 @@
             opacity: 0;
             transition: all 0.3s ease;
             top: 7rem;
-            height: calc(100% - 7rem);
+            height: calc(100% - 8rem);
             background-color:$blue-color;
             font-size: 1.2rem;
             .link {

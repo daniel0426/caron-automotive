@@ -4,6 +4,7 @@ import "../style/main.scss"
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import sliderData from '../components/dataSlider';
+import SEO from '../components/SEO';
 
 const MainPage = () => {
     const [slideIndex, setSlideIndex] = useState(1);
@@ -24,6 +25,7 @@ const MainPage = () => {
     }
   return (
     <Layout >
+      <SEO title="Home" />
       <main className="main_container">
         <h1>CARON AUTOMOTIVE</h1>
         <p>We offer quality repairs with years of experience</p>

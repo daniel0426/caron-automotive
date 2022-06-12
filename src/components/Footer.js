@@ -8,7 +8,7 @@ import {BiPhoneCall} from 'react-icons/bi';
 import {HiOutlineMail} from 'react-icons/hi';
 
 
-import GoogleMap from './GoogleMap';
+import Map from './GoogleMap';
 import "../style/footer.scss";
 
 
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
            
         </div>
-        <GoogleMap />
+        <Map />
     </footer>
   )
 }

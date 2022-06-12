@@ -1,32 +1,26 @@
-import React from 'react'
-import GoogleMapReact from 'google-map-react';
+import React, { useMemo } from 'react'
+import {GoogleMap, useLoadScript, Marker} from '@react-google-maps/api';
 import "../style/map.scss";
-import {HiOutlineLocationMarker} from 'react-icons/hi';
 
 
-const GoogleMap = () => {
-    const location = {
+const Map = () => {
+    const center = useMemo(()=>({
         lat : -37.698349401116715, 
         lng : 176.15726925633035
-    }
+    }), []);
 
-  return (
+    const {isLoaded} = useLoadScript({
+      googleMapsApiKey : "AIzaSyAI2bn_C3zM7QV8kDXjbpA7gVQXvq87OvY",
+    });
+
+
+  return isLoaded? (
     <div className='map'>
-            <div className='google_map' style={{ height: '100%', width: '100%' }}>
-            <GoogleMapReact
-                bootstrapURLKeys={{key: process.env.GATSBY_GOOGLE_MAP_API_KEY}}
-                defaultCenter={location}
-                yesIWantToUseGoogleMapApiInternals
-                defaultZoom={21}
-            >
-            <HiOutlineLocationMarker 
-              lat={location.lat}
-              lng={location.lng}
-            />
-            </GoogleMapReact>
-            </div>
+    <GoogleMap zoom={18} center={center} mapContainerClassName="google_map">
+      <Marker position={center}/>
+    </GoogleMap>
     </div>
-  )
+  ) : <></>
 }
 
-export default GoogleMap
+export default Map

@@ -3,10 +3,12 @@ import Layout from '../components/layout'
 import "../style/service.scss"
 import { StaticImage } from 'gatsby-plugin-image';
 import {AiOutlineCheckCircle} from 'react-icons/ai';
+import SEO from '../components/SEO';
 
 const service = () => {
   return (
     <Layout>
+     <SEO title="Service"/>
       <main className="service_container">
         <h1>SERVICES</h1>
         <div className="check_container">
