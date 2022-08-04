@@ -32,5 +32,11 @@ module.exports = {
         region: "ap-southeast-2"
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/nav/logo.png',
+      },
+    },
   ]
 };

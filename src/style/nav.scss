@@ -1,13 +1,22 @@
 @import 'global.scss';
+.nav.isScrolled {
+    background-color: #141414;
+}
 
 .nav {
+    position:fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2em 5%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 50;
     height: 9em;
+    margin-bottom: 12em;
     .logo {
-        width: 10%;
+        width: 10em;
         min-width: 8em;
     }
 
@@ -34,14 +43,15 @@
 
 @media screen and (max-width: 650px) {
     .nav {
-        height: 7em;
+        height: 8em;
         padding: 2em 5% 2em 0;
 
         .links {
+            position:fixed;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: absolute;
             text-align: center;
             justify-content: space-evenly;
             width: 100%;
@@ -49,8 +59,8 @@
             left: 100%;
             opacity: 0;
             transition: all 0.3s ease;
-            top: 7rem;
-            height: calc(100% - 8rem);
+            top: 8rem;
+            height: calc(100% - 7rem);
             background-color:$blue-color;
             font-size: 1.2rem;
             .link {

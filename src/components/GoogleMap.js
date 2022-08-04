@@ -10,7 +10,8 @@ const Map = () => {
     }), []);
 
     const {isLoaded} = useLoadScript({
-      googleMapsApiKey : "AIzaSyAI2bn_C3zM7QV8kDXjbpA7gVQXvq87OvY",
+      //gogoleMap Api is hidden
+      googleMapsApiKey : "",
     });
 
 

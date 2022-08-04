@@ -1,9 +1,9 @@
 @import 'global.scss';
 
 .main_container {
-    padding: 3em 10%;
+    padding: 1em 10%;
     text-align: center;
-    margin: 2em 0 ;
+    margin: 11em 0 2em 0;
     h1 {
         font-size: 4em;
         color: $yellow-color;
@@ -93,14 +93,16 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-bottom: 6em;
+            margin-bottom: 5em;
             background-color: $darkgray-color;
-            padding: 2em ;
+            padding: 2rem ;
+            border-radius: 1.2rem;
             .about-summary_img {
                 flex:1 ;
                 text-align: center;
                img {
-                   width: 100%;
+                   width: 90%;
+                   border-radius: 0.8rem;
                }
             }
             .about-summary_desc {
@@ -313,7 +315,7 @@
             .about-summary {
                flex-direction: column;
                 .about-summary_desc {
-                    padding: 2em;
+                    padding: 1.5em;
                    
                     h2 {
                            font-size: 1.7em;
@@ -321,7 +323,8 @@
 
                        }
                        p{
-                           font-size: 1.3em;
+                        font-size: 1.3em;
+                        width: 100%;
                        }
                 }
                 &:nth-child(2n){
