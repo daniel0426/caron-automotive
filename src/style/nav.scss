@@ -44,8 +44,10 @@
 @media screen and (max-width: 650px) {
     .nav {
         height: 8em;
-        padding: 2em 5% 2em 0;
-
+        padding: 2em 8% 2em 5%;
+        .logo {
+            width: 7em;
+        }
         .links {
             position:fixed;
             

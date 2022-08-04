@@ -314,12 +314,13 @@
         .about-summary_container{
             .about-summary {
                flex-direction: column;
+               padding: 1.5rem 1rem;
                 .about-summary_desc {
                     padding: 1.5em;
                    
                     h2 {
                            font-size: 1.7em;
-                        margin-bottom: 1em;
+                            margin: 1rem 0 0.5rem 0;
 
                        }
                        p{
@@ -355,7 +356,7 @@
         padding: 10% 5%;
         margin-bottom: 5em;
         h1 {
-            font-size: 1.6em;
+            font-size: 1.8em;
         }
         p {
             font-size: 1.3em;
@@ -384,8 +385,11 @@
        }
         .about-summary_container{
             .about-summary {
+                .about-summary_img img{
+                    margin: 0 auto;
+                }
                 .about-summary_desc {
-                    padding: 1em;
+                    padding: 1em 0.5em;
                     h2 {
                            font-size: 1.4em;
                        
@@ -410,9 +414,9 @@
             font-size: 1.1em;
         }
         a {
-            padding: 0.5em 1em;
+            padding: 0.6em 1.2em;
             border-radius: 10px;
-            font-size: 1em;
+            font-size: 1.2em;
           
         }
     }

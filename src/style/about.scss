@@ -1,8 +1,8 @@
 @import 'global.scss';
 
 .about_container {
-    width: 90%;
-    margin: 11em auto 0 auto;
+    width: 80%;
+    margin: 11em auto 3em auto;
     h1 {
         font-size: 4em;
         color: $yellow-color;
@@ -84,8 +84,9 @@
 
 @media (max-width: 550px){
     .about_container  {
+        width: 90%;
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             text-align: center;
             margin-top: 2em;
         }
