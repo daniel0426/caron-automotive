@@ -11,7 +11,7 @@ const Map = () => {
 
     const {isLoaded} = useLoadScript({
       //gogoleMap Api is hidden
-      googleMapsApiKey : "",
+      googleMapsApiKey : "AIzaSyAI2bn_C3zM7QV8kDXjbpA7gVQXvq87OvY",
     });
 
 

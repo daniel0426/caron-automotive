@@ -1,20 +1,19 @@
-@import 'global.scss';
+@import "global.scss";
 
-.contact_container{
-    width: 60%;
-    margin: 11em auto 3em auto;
+.contact_container {
+  width: 60%;
+  margin: 15em auto 3em auto;
 
-    h1 {
-        text-align: center;
-        color: $yellow-color;
-        margin-bottom: 2em;
-    }
-    
+  h1 {
+    text-align: center;
+    color: $yellow-color;
+    margin-bottom: 2em;
+  }
 }
 
-@media (max-width: 900px){
-    .contact_container {
-        width: 100%;
-        margin: 11em auto 3em auto;
-    }
+@media (max-width: 900px) {
+  .contact_container {
+    width: 100%;
+    margin: 11em auto 3em auto;
+  }
 }

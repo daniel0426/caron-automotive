@@ -1,33 +1,43 @@
-import React, {useRef, useState} from 'react'
-import "../style/contact_form.scss"
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
+import "../style/contact_form.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact_Form = () => {
-    const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm(process.env.GATSBY_SERVICE_ID , process.env.GATSBY_TEMPLATE_ID, form.current, process.env.GATSBY_USER_ID )
-      .then((result)=> {
-        if(result.text==='OK'){
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
+        form.current,
+        process.env.GATSBY_USER_ID
+      )
+      .then((result) => {
+        if (result.text === "OK") {
           setSubmitSuccess(true);
-          setTimeout(()=> setSubmitSuccess(false), 3000);
-          form.current.reset()
+          setTimeout(() => setSubmitSuccess(false), 3000);
+          form.current.reset();
         }
-        
       })
-      .catch((err)=> {
+      .catch((err) => {
         console.log(err);
-      })
-        
-    };
+      });
+  };
 
   return (
     <>
-    {submitSuccess ? 
+      <iframe
+        className="booking_form"
+        src="https://www.mechanicdesk.com.au/booking_requests/new?token=a02912b413b8420b1fbb3fc11dab1af102bb0618"
+        height="850"
+        frameBorder="0"
+      ></iframe>
+      {/* {submitSuccess ? 
     <div className='success_alert'>
         <h1 className="alert_message">Your submission was received !</h1>
         <p>We'll get back to you soon !</p>
@@ -54,9 +64,9 @@ const Contact_Form = () => {
       SEND 
     </button>
   </form>
-    }
- 
-  </>)
-}
+    } */}
+    </>
+  );
+};
 
-export default Contact_Form
+export default Contact_Form;

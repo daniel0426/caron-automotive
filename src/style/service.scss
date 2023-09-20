@@ -1,142 +1,281 @@
-@import 'global.scss';
+@import "global.scss";
 
 .service_container {
-    width: 80%;
-    margin: 11em auto 2em auto;
+  width: 80%;
+  margin: 15em auto 2em auto;
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 1em;
 
-    h1 {
-        font-size: 4em;
+    .price {
+      display: flex;
+      flex-direction: column;
+      color: darkorange;
+      font-weight: bolder;
+      font-size: 1.3em;
+      margin-top: 1em;
+    }
+    .price_sub {
+      color: black;
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+  }
+
+  .wof_container {
+    background-color: $darkgray-color;
+    padding: 2.5em 5%;
+    border-radius: 10px;
+    margin-top: 2em;
+    h2 {
+      margin-bottom: 1em;
+      font-size: 2em;
+      color: $yellow-color;
+    }
+    .desc {
+      margin-bottom: 1em;
+      font-size: 1.2em;
+      color: $gray-color;
+    }
+    .booking_btn {
+      display: flex;
+      justify-content: flex-end;
+      .booking {
+        padding: 0.8em;
+        border: 2px solid $yellow-color;
+        border-radius: 10px;
         color: $yellow-color;
-    }
-    .check_container {
-       margin-top: 2em ;
-       display: flex;
-       justify-content: space-between;
-       background-color: $darkgray-color;
-       padding: 3em 2em;
-       border-radius:10px;
-       h2 {
-           color: $yellow-color;
-           text-align: center;
-           margin-bottom: 1em;
-           font-size: 2em;
-       }
-       .service_item {
-           display: flex;
-           align-items: center;
-           color: $gray-color;
-           margin :0.5em 1em;
-           svg {
-               margin-right: 0.5em;
-           }
-           p {
-               font-size: 1.2em;
-           }
-           
-       }
-       .basic {
-           flex: 1;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-       }
-       .full {
-           flex: 2;
-           display:flex;
-           flex-direction: column;
-           align-items: center;
-           ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-           }
-       }
-       
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
     }
 
-    .service_list_container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        margin: 10% 0;
-        .service_item {
-            background-color: $darkgray-color;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            padding: 2em;
-            transition: all 0.15s linear;
-            position: relative;
-            bottom: 0;
-            &:hover {
-                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-                position: relative;
-                bottom: 3px;
-            }
+    .wof_combo,
+    .wof {
+      margin: 2em 0 2em 0;
+      padding: 2em;
+      border: 2px solid $yellow-color;
+      border-radius: 10px;
+      h3 {
+        color: $yellow-color;
+        margin-bottom: 1em;
+        font-size: 1.6em;
+      }
+      p {
+        color: $gray-color;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      .price {
+        color: darkorange;
+        font-weight: bolder;
+        font-size: 1.2em;
+      }
+    }
+  }
 
-            .service_img {
-                max-width: 5em;
-                
-            }
-            h2 {
-                color: $yellow-color;
-                margin: 1em 0;
-                font-size: 1.7em;
-            }
-            .service_details {
-                li{
-                    color: $gray-color;
-                    margin-bottom: 1em;
-                    font-size: 1.2em;
-                }
-            }
+  .oilservice_container {
+    background-color: $darkgray-color;
+    padding: 2.5em 5%;
+    border-radius: 10px;
+    margin-top: 2em;
+    h2 {
+      margin-bottom: 1em;
+      font-size: 2em;
+      color: $yellow-color;
+    }
+    .desc {
+      margin-bottom: 1em;
+      font-size: 1.2em;
+      color: $gray-color;
+    }
+    .booking_btn {
+      display: flex;
+      justify-content: flex-end;
+      .booking {
+        padding: 0.8em;
+        border: 2px solid $yellow-color;
+        border-radius: 10px;
+        color: $yellow-color;
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+    }
+
+    .oilservice {
+      margin: 2em 0 2em 0;
+      padding: 2em;
+      border: 2px solid $yellow-color;
+      border-radius: 10px;
+      h3 {
+        color: $yellow-color;
+        margin-bottom: 1em;
+        font-size: 1.6em;
+      }
+
+      .price {
+        color: darkorange;
+        font-weight: bolder;
+        font-size: 1.2em;
+      }
+      .price_sub {
+        color: black;
+        font-size: 1rem;
+        font-weight: lighter;
+      }
+    }
+  }
+  h1 {
+    font-size: 4em;
+    color: $yellow-color;
+  }
+  .check_container {
+    position: relative;
+    margin-top: 2em;
+    background-color: $darkgray-color;
+    border-radius: 10px;
+    padding: 2.5em 5%;
+
+    .booking_btn {
+      display: flex;
+      justify-content: flex-end;
+      .booking {
+        padding: 0.8em;
+        border: 2px solid $yellow-color;
+        border-radius: 10px;
+        color: $yellow-color;
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+    }
+    .check_main_container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      .basic {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $yellow-color;
+        border-radius: 10px;
+        padding: 1.5em 0.5em;
+        margin-right: 0.5em;
+      }
+      .full {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $yellow-color;
+        border-radius: 10px;
+        padding: 1.5em 0.5em;
+        margin-left: 0.5em;
+      }
+      .service_item {
+        display: flex;
+        align-items: flex-start;
+        color: $gray-color;
+        margin: 0.3em 0;
+        svg {
+          margin-top: 0.5em;
+          width: 2em;
         }
+        p {
+          flex: 1;
+          font-size: 1.2em;
+          margin-left: 0.5em;
+          margin-bottom: 0.5em;
+          text-align: left;
+        }
+      }
     }
 
+    h2 {
+      color: $yellow-color;
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 2em;
+    }
+  }
+
+  .service_list_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 5% 0;
+    .service_item {
+      background-color: $darkgray-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      padding: 2em;
+      transition: all 0.15s linear;
+      position: relative;
+      bottom: 0;
+
+      &:hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        position: relative;
+        bottom: 3px;
+      }
+
+      .service_img {
+        max-width: 5em;
+      }
+      h2 {
+        color: $yellow-color;
+        margin: 1em 0;
+        font-size: 1.7em;
+      }
+      .service_details {
+        li {
+          color: $gray-color;
+          margin-bottom: 1em;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 }
 
-
-@media (max-width:1050px){
-    .service_container {
-        .check_container {
-            flex-direction: column;
-            .basic {
-                padding-bottom: 2em;
-                 margin-bottom: 2em;
-                border-bottom: 1px solid $gray-color;
-            }
-        }
-
-        .service_list_container{
-            grid-template-columns: repeat(2,1fr)
-        }
-
+@media (max-width: 1050px) {
+  .service_container {
+    .check_main_container {
+      flex-direction: column;
+      .basic {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        border-bottom: 1px solid $gray-color;
+      }
     }
-    
+
+    .service_list_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
-@media (max-width:650px){
-
-    .service_container {
+@media (max-width: 650px) {
+  .service_container {
     width: 90%;
 
-        h1 {
-            font-size: 3em ;
-            text-align: center;
-        }
-        .check_container{
-            .full {
-                ul {
-                 grid-template-columns: repeat(1, 1fr);
-                }
-            }
-        }
-     
-
-        .service_list_container{
-            grid-template-columns: repeat(1,1fr)
-        }
-
+    h1 {
+      font-size: 3em;
+      text-align: center;
     }
-    
+    .check_container {
+      .full {
+        ul {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+
+    .service_list_container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
