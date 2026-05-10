@@ -1,0 +1,137 @@
+@import "global.scss";
+.nav.isScrolled {
+  background-color: #141414;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  height: 12em;
+  margin-bottom: 13em;
+  padding: 1em 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .nav_info {
+    font-size: 1.2em;
+    color: $yellow-color;
+  }
+
+  .logo {
+    width: 9em;
+    min-width: 8em;
+    margin-bottom: -1em;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+
+    .link {
+      a {
+        margin-left: 2em;
+        color: $gray-color;
+        font-size: 1.5em;
+        transition: all 0.15s ease;
+        &:hover {
+          color: $yellow-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    height: 11em;
+    padding: 2em 5% 2em 5%;
+    .nav_info {
+      font-size: 1.1em;
+      color: $yellow-color;
+    }
+
+    .logo {
+      width: 7em;
+    }
+    .links {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      width: 100%;
+      top: 0;
+      left: 100%;
+      opacity: 0;
+      transition: all 0.3s ease;
+      top: 11rem;
+      height: calc(100% - 7rem);
+      background-color: $blue-color;
+      font-size: 1.2rem;
+      .link {
+        a {
+          display: inline-block;
+          padding: 0.5rem;
+          margin: 0;
+          transition: all 0.1s linear;
+          :hover {
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+    }
+
+    .links.showNav {
+      flex-direction: column;
+      width: 100%;
+      left: 0;
+      opacity: 1;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .service_container {
+    .check_main_container {
+      flex-direction: column;
+      .basic {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        border-bottom: 1px solid $gray-color;
+      }
+    }
+
+    .service_list_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .service_container {
+    width: 90%;
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+    .check_container {
+      .full {
+        ul {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+
+    .service_list_container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
